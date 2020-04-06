@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fill_FIR"
+            android:icon="@drawable/ic_fill_fir_black_24dp"
+            android:title="Fill FIR" />
+        <item
+            android:id="@+id/report_crime"
+            android:icon="@drawable/ic_report_crime_black_24dp"
+            android:title="Report Crime" />
+        <item
+            android:id="@+id/check_status"
+            android:icon="@drawable/ic_check_status_black_24dp"
+            android:title="Check FIR Status" />
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/ic_faq_black_24dp"
+            android:title="Frequently Asked Questions" />
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/ic_logout_black_24dp"
+            android:title="Logout" />
+        <item
+            android:id="@+id/knowyourpolice"
+            android:icon="@drawable/ic_know_police_24dp"
+            android:title="Know Your Police" />
+    </group>
+</menu>
