@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "360766520562",
+    "firebase_url": "https://fir-filing-system.firebaseio.com",
+    "project_id": "fir-filing-system",
+    "storage_bucket": "fir-filing-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360766520562:android:84cd1b0bb903180517a46b",
+        "android_client_info": {
+          "package_name": "com.example.fir_filing_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360766520562-rq6q99bbse9nb1n430a53pbcnlq0q4i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfQXe040XnTKOyZ8YXxL661Yk5XKj_d-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360766520562-rq6q99bbse9nb1n430a53pbcnlq0q4i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
