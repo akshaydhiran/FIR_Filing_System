@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="MenuActivities.KnowYourPoliceActivity"></activity>
+        <activity android:name="MenuActivities.FAQActivity" />
+        <activity android:name="MenuActivities.CheckStatusActivity" />
+        <activity android:name="MenuActivities.ReportCrimeActivity" />
+        <activity android:name="MenuActivities.Fill_FIR_Activity" />
         <activity android:name="Initial.ForgotPasswordActivity" />
         <activity android:name="Initial.LoginActivity" />
         <activity android:name="Initial.RegisterActivity" />
@@ -19,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
