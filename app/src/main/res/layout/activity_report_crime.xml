@@ -143,7 +143,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="15dp"
-        android:background="@drawable/et_custom"
+        android:background="#fff"
         android:hint="Details of Crime"
         android:gravity="top"
         android:maxLength="1500"/>
