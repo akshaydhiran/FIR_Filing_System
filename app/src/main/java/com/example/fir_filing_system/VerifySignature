@@ -1,0 +1,43 @@
+import android.content.Context;
+import android.util.Base64;
+import android.util.Log;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.security.KeyFactory;
+import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
+import java.security.Signature;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.X509EncodedKeySpec;
+
+public class VerifySignature {
+    private static final String TAG = RSAUtils.class.getSimpleName();
+    public static boolean verifySignature(String input, String algorithm,
+                                          byte[] sign, PublicKey pubKey) throws Exception {
+        Signature sg = Signature.getInstance(algorithm);
+        sg.initVerify(pubKey);
+        Log.i(TAG, "Signature Object Info: ");
+        Log.i(TAG, "Algorithm = " + sg.getAlgorithm());
+        Log.i(TAG, "Provider = " + sg.getProvider());
+
+        FileInputStream in = new FileInputStream(input);
+        byte[] buff = new byte[in.available()];
+        in.read(buff);
+        in.close();
+
+        sg.update(buff);
+
+        boolean ok = sg.verify(sign);
+        Log.i(TAG, "Verify Processing Info: ");
+        Log.i(TAG, "Verification result = " + ok);
+        return ok;
+    }
+}
