@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fir_filing_system">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="MenuActivities.KnowYourPoliceActivity"></activity>
+        <activity android:name="Admin.AdminDigitalSignature"></activity>
+        <activity android:name="Initial.AdminHome" />
+        <activity android:name="Initial.AdminLoginActivity" />
+        <activity android:name="Initial.WelcomeActivity" />
+        <activity android:name="Initial.AdminSHOActivity" />
+        <activity android:name="MenuActivities.KnowYourPoliceActivity" />
         <activity android:name="MenuActivities.FAQActivity" />
         <activity android:name="MenuActivities.CheckStatusActivity" />
         <activity android:name="MenuActivities.ReportCrimeActivity" />
