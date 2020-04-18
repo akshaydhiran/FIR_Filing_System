@@ -1,15 +1,13 @@
-package Initial;
-
-import androidx.appcompat.app.AppCompatActivity;
+package Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.fir_filing_system.R;
+import androidx.appcompat.app.AppCompatActivity;
 
-import Admin.AdminDigitalSignature;
+import com.example.fir_filing_system.R;
 
 public class AdminHome extends AppCompatActivity {
 
@@ -18,6 +16,7 @@ public class AdminHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_home);
+        verifyFIR = findViewById(R.id.admin_signature);
 
         verifyFIR.setOnClickListener(new View.OnClickListener() {
             @Override

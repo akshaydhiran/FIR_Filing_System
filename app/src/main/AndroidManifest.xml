@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="Admin.AdminDigitalSignature"></activity>
-        <activity android:name="Initial.AdminHome" />
-        <activity android:name="Initial.AdminLoginActivity" />
         <activity android:name="Initial.WelcomeActivity" />
-        <activity android:name="Initial.AdminSHOActivity" />
         <activity android:name="MenuActivities.KnowYourPoliceActivity" />
         <activity android:name="MenuActivities.FAQActivity" />
         <activity android:name="MenuActivities.CheckStatusActivity" />

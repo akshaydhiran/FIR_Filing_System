@@ -25,6 +25,7 @@
         />
 
     <Button
+        android:id="@+id/admin_signature"
         android:background="#000"
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"

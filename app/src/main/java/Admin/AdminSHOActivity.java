@@ -1,6 +1,9 @@
-package Initial;
-import androidx.appcompat.app.AppCompatActivity;
+package Admin;
+
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.fir_filing_system.R;
 
 public class AdminSHOActivity extends AppCompatActivity {
