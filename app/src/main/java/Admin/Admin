@@ -1,0 +1,26 @@
+package com.example.fir_filing_system.admin;
+
+import com.google.firebase.database.IgnoreExtraProperties;
+
+@IgnoreExtraProperties
+public class Admin {
+    private String EmailId;
+    private String Password;
+
+    public Admin (){
+        //this constructor is required
+    }
+
+    public Admin(String EmailId, String Password) {
+        this.EmailId = EmailId;
+        this.Password = Password;
+    }
+
+    public String getEmailId() {
+        return EmailId;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+}
